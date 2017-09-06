@@ -1,0 +1,13 @@
+{{> header }}
+<section id="viewComments">
+    {{> postDetail}}
+
+    <div class="post post-content">
+       {{> commentForm}}
+    </div>
+    {{#each comments}}
+   {{> singleComment}}
+    {{/each}}
+</section>
+
+{{> footer}}
